@@ -1,0 +1,19 @@
+body{
+    background-color: violet;
+}
+h1{
+    text-align: center;
+}
+.btn{
+    width: 200px;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.btn button{
+    width: 200px;
+    height: 70px;
+    font-size: 15pt;
+}
+p{
+    text-align: center;
+}

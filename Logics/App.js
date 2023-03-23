@@ -20,9 +20,14 @@ const bgChanger = () =>{
     for(let i = 0; i<6; i++) {
         bgColor += possible.charAt(Math.floor(Math.random() * possible.length))
     }
-    console.log(bgColor)
-
     bdy.style.backgroundColor = "#"+bgColor;
     document.getElementById('colorCode').innerText = "#"+bgColor;
     
+}
+const copyCode =()=>{
+    var text = document.getElementById("colorCode").innerHTML;
+    
+    navigator.clipboard.writeText(text)
+    alert(`Copied ${text}`);
+
 }
