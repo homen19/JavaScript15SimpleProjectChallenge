@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js</title>
     <script src="./Logics/App.js"></script>
-    <link rel="stylesheet" href="./Style.css">
-    
-</head>
-<body id="body">
-    <h1>Color Hex Code Generator</h1>
-   
-    <div class="btn">
-        <button onclick="bgChanger()">Generate</button>
+    <script
+      src="https://kit.fontawesome.com/7deb9bcff2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body id="body">
+    <nav>
+      <h1>Modal <span>Maker</span></h1>
+    </nav>
+    <div class="container">
+      <h1>MODAL PROJECT</h1>
+      <div class="btn">
+        <button id="modalBtn" onclick="OpenModal()">Open Modal</button>
+      </div>
     </div>
-    <p id="res">Result</p>
-    <p>Generated Color Code is: <span id="colorCode"></span> </p>
-    <div class="btn">
-        <button onclick="copyCode()">Copy Code</button>
+
+    <!-- -------modal------- -->
+    <div id = "modal" class="modal">
+      <h2>Modal Data</h2>
+     <button id="closeBtn" class="closeBtn" onclick="closeBtn()"><i class="fa-solid fa-2x fa-xmark"></i></button>
     </div>
-    
-    
-</body>
+  </body>
 </html>
